@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Mahmoud  | Portfolio & Resume</title>
+    <!-- Bootstrap 5 RTL CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Google Fonts (Cairo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f2f4f5;
+            color: #333;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 120px 0;
+        }
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #2a5298;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+        .profile-img {
+            width: 260px;
+            height: 260px;
+            object-fit: cover;
+            object-position: 50% 25%;
+            border: 4px solid #fff;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .skill-badge {
+            background-color: #e9ecef;
+            color: #2b2d42;
+            font-weight: 600;
+            padding: 10px 18px;
+            border-radius: 25px;
+            margin: 6px;
+            display: inline-block;
+            font-size: 0.95rem;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: #b0b0b0;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#"><i class="fas fa-code ms-2 text-primary"></i>Mohamed Mahmoud</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">نبذة عني</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">المهارات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">سابق الأعمال</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">تواصل معي</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <header id="hero" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">مرحباً، أنا Mohamed Mahmoud Ismail</h1>
+            <p class="lead mb-4 fs-4">مطور برمجيات وواجهات مستخدم (Web developer & Frontend )</p>
+            <a href="#projects" class="btn btn-light btn-lg px-4 me-2 fw-bold text-primary shadow-sm">استعرض أعمالي</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg px-4 fw-bold">تواصل معي</a>
+        </div>
+    </header>
+
+    <!-- 3. About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title">نبذة عني</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+                    <!-- الصورة الشخصية -->
+                    <img src="c:\Users\SaWa\OneDrive\المستندات\WhatsApp Image 2026-10-19 at 9.06.33 PM.jpeg" alt="Mohamed Mahmoud" class="rounded-circle profile-img img-fluid">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="fw-bold mb-3">Mohamed Mahmoud</h3>
+                    <p class="text-muted fs-5 leading-relaxed mb-4">
+                        مطور برمجيات شغوف ببناء تطبيقات وواجهات ويب حديثة وسريعة ومتجاوبة مع كل الأجهزة. أمتلك خلفية قوية في استخدام أحدث تقنيات الويب وكتابة كود برمجي نظيف ومنظم قابل للتطوير.
+                    </p>
+                    <div class="row mb-3 fs-6">
+                        <div class="col-sm-6 mb-2"><strong><i class="fas fa-envelope text-primary ms-2"></i>البريد:</strong> moham019ed@gmail.com</div>
+                        <div class="col-sm-6 mb-2"><strong><i class="fas fa-user-tag text-primary ms-2"></i>المسمى:</strong> Web developer</div>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-lg mt-2"><i class="fas fa-download ms-2"></i>تحميل السيرة الذاتية (CV)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">المهارات والتقنيات</h2>
+            <div class="text-center">
+                <span class="skill-badge"><i class="fab fa-html5 text-danger ms-1"></i> HTML5</span>
+                <span class="skill-badge"><i class="fab fa-css3-alt text-primary ms-1"></i> CSS3</span>
+                <span class="skill-badge"><i class="fab fa-js text-warning ms-1"></i> JavaScript (ES6+)</span>
+                <span class="skill-badge"><i class="fab fa-bootstrap text-purple ms-1" style="color: #6f42c1;"></i> Bootstrap 5</span>
+                <span class="skill-badge"><i class="fab fa-git-alt text-danger ms-1"></i> Git & GitHub</span>
+                <span class="skill-badge"><i class="fas fa-mobile-alt text-success ms-1"></i> Responsive Web Design</span>
+                <span class="skill-badge"><i class="fas fa-code text-info ms-1"></i> REST APIs</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title">سابقة الأعمال البرمجية</h2>
+            <div class="row g-4">
+                <!-- مشروع 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="E-Commerce App">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">متجر إلكتروني متكامل</h5>
+                            <p class="card-text text-muted">منصة تسوق إلكتروني متجاوبة تتضمن عربة تسوق وتصفح للمنتجات بأسلوب عصري وسريع.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">عرض المشروع <i class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- مشروع 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Dashboard App">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">لوحة تحكم وتحليل بيانات</h5>
+                            <p class="card-text text-muted">واجهة لوحة تحكم تفاعلية لإدارة البيانات وعرض الإحصائيات مع مخططات بيانية توضيحية.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">عرض المشروع <i class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- مشروع 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Corporate Website">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">موقع تعريفي لشركة تقنية</h5>
+                            <p class="card-text text-muted">موقع ويب متكامل يعرض خدمات الشركة، فريق العمل، ونموذج تواصل تفاعلي سريع.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">عرض المشروع <i class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">تواصل معي</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">الاسم</label>
+                            <input type="text" class="form-control" id="name" placeholder="أدخل اسمك الكريم">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">الرسالة</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="اكتب رسالتك هنا..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 fw-bold py-2">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-0">جميع الحقوق محفوظة &copy; 2026 | تم التطوير بواسطة <strong>Mohamed Mahmoud</strong></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
